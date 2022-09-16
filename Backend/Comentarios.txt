@@ -1,0 +1,11 @@
+Usando o thunder client:
+Get mostra o resultado
+Post adiciona um novo item no banco
+Put e Patch atualiza um item já criado
+
+{{nome}} entre duplas chaves mostra o conteudo dentro de uma var
+font-size: 3rem : o rem significa 14px 3rem,14x3 assim o tamanho da fonte não é absoluto,
+melhor assim para o usuário que quiser aumentar o tamanho do texto.
+?: deixa o valor da var opcional
+alt+shif+f formata o código
+shift+alt+seta para baixo copia tudo que foi selecionado e passa para baixa

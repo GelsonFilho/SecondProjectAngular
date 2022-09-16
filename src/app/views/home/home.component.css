@@ -1,0 +1,283 @@
+.home .title{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #005b8f;
+}
+
+.home .subtitle{
+    font-size: 1.1rem;
+    
+    
+}
+/*Conceitos*/
+.Conceitos{
+    background-color: #23334d;
+    font: normal 15pt arial ;
+    
+}
+
+.titulo{
+    padding: 1px;
+    color:rgb(174, 162, 106);
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.subtitulo{
+    padding: 5px;
+    color:rgb(174, 162, 106);
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.paragrafo2 {
+    padding: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+
+    
+section{
+    background: rgb(35,50,76);
+    border-radius: 10px;
+    padding: 2px;
+    width: 400px;
+    margin-left: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+
+}
+
+.position_conf{
+
+    position: relative;
+    top: 10px;
+    right: 20px;
+
+}
+
+.position_integ{
+    
+    position: relative;
+    top: -75px;
+    right: -480px;
+       
+}
+
+
+.position_disp{
+    
+    position: relative;
+    top: -148px;
+    right: -950px;
+       
+}
+
+.position_text_conf{
+    
+    position: relative;
+    top: -120px;
+    left: 10px;
+       
+}
+
+.position_text_integ{
+    
+    position: relative;
+    top: -200px;
+    left: 450px;
+       
+}
+
+.position_text_disp{
+    
+    position: relative;
+    top: -280px;
+    right: -900px;
+       
+}
+
+.imagem_conc{
+    margin-left: 75px;
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.imagem_conc2{
+    margin-left: 50px;
+    height: 300px;
+    width: 380px;
+    border-radius: 10px;
+
+}
+
+.imagem_conc3{
+    margin-left: 100px;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 2px;
+
+}
+
+.imagem_conc4{
+    margin-left: left;
+    height: 550px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    
+
+}
+
+.imagem_conc5{
+    margin-left: 50px;
+    height: 100px;
+    width: 120px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+
+/* Certificação */
+
+details {
+      list-style: none;
+}
+summary {
+    list-style: none;
+}
+p{
+    margin:0;
+}
+.certf_geral{
+    background-color: white;
+    height: auto;
+}
+.certf_titulo{
+    color: #005b8f;
+    text-align: left;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-left: 2px;
+    margin-right: auto;
+    max-width: 85%;
+}
+.certf_paragrafo{
+    
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: auto;
+    max-width: 85%;
+}
+.certf_paragrafo2{
+    
+    color: #AEA26A;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+}
+.certf_collapse{
+    border: solid 1px var(--gray-lighter);
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    font-family: 'Oswald', sans-serif;
+}
+.certf_summary{
+    background-color:#a7995b;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    cursor:pointer;
+}
+.certf_description{
+    background-color: #AEA26A;
+    color:white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-top: var(--gray-light) solid 1px;
+    line-height: 21px;
+    padding: 10px;
+}
+
+/*Para saber mais*/
+.pagina_sabermais{
+    background-color: #23334d;
+    height: auto;
+    padding: 100px;
+    }
+
+.titulo_sabermais{
+color: #AEA26A;
+text-align: left;
+padding: 30px;
+font-family: 'Oswald', sans-serif;
+font-size: 50px;
+
+}
+
+.subtitulos_sabermais{
+    color: #AEA26A;
+    text-align: left;
+    padding: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+
+}
+
+.subtitulos_2_sabermais{
+    color: #AEA26A;
+    text-align: left;
+    padding: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+}
+
+.paragrafo_sabermais{
+    padding: 20px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+}
+.imagem{
+height: 250px;
+width: auto;
+padding: 20px;
+
+}
+
+.footer {
+    position: flex;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 300;
+    background-color: rgb(174, 162, 106);
+}

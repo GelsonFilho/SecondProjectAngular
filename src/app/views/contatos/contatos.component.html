@@ -1,0 +1,51 @@
+<form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+    <mat-form-field> 
+        <mat-label>Nome</mat-label>
+        <input matInput [formControl]="nome" required>
+        <mat-error *ngIf="nome.invalid">Por favor, insira seu nome</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="email" placeholder="email@exemplo.com" required>
+        <mat-error *ngIf="email.invalid">Por favor, digite um email válido</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>CEP</mat-label>
+        <input #cep matInput [formControl]="cep_endereco" required>
+        <mat-error *ngIf="cep_endereco.invalid">Por favor, insira seu CEP</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Logradouro</mat-label>
+        <input #logradouro matInput [formControl]="logradouro_endereco">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Bairro</mat-label>
+        <input #bairro matInput [formControl]="bairro_endereco">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Cidade</mat-label>
+        <input #cidade matInput [formControl]="cidade_endereco">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>UF</mat-label>
+        <input #uf matInput [formControl]="uf_endereco">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nº</mat-label>
+        <input #num matInput [formControl]="num_endereco">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Menssagem</mat-label>
+        <textarea matInput [formControl]="mensagem" maxlength="256" placeholder="Eu me interesso em..."
+            required></textarea>
+        <mat-hint align="end"> {{mensagem.value?.length || 0}}/256</mat-hint>
+        <mat-error *ngIf="mensagem.invalid">Por favor, digite uma mensagem</mat-error>
+    </mat-form-field>
+    <button [disabled]="isLoading" class="submit" type="submit">Enviar</button>
+    <input [formControl]="honeypot" class="hidden" type="text" />
+    <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+        <span>{{responseMessage}}</span>
+    </div>
+</form>

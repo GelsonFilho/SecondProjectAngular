@@ -1,0 +1,176 @@
+html {
+	scroll-behavior: smooth;
+	/* Deixar o scroll ser realizado de uma maneira suave quando clicado em algum link do menu */
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	/* Definição da fonte a ser utilizada no projeto */
+}
+
+p {
+	font-family: 'Oswald', sans-serif;
+	/* Definição da fonte a ser utilizada nos parágrafos */
+	font-size: 1.35rem;
+	/*Tamanho da fonte */
+	line-height: 26px;
+	/* Espaçamento entre as linhas */
+}
+
+img {
+	display: block;
+	/* Deixa a imagem num formato de bloco que significa que ela vai ocupar toda a largura dela mesma */
+	max-width: 100%;
+	/* Largura máxima da imagem definida para ser 100% do tamanho dela */
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0px;
+	position: flex;
+    background-color: #23334d;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.dados {
+	padding: 40px 0;
+	/* Espaçamento interno cima, baixo e esquerda e direita */
+    color: white;
+}
+
+.dados_lista li {
+	background: rgb(230, 226, 226);
+	/* Cor de fundo das caixas */
+	border-radius: 10px;
+	text-align: center;
+	/* Texto alinhado ao centro */
+}
+
+.dados_lista li img {
+	/* Imagem refente aos dados */
+	margin: 0 auto;
+	/* Imagens alinhadas ao centro das caixas */
+}
+
+.dados_lista li h3 {
+	font-weight: bold;
+	/* Título em negrito */
+	font-size: 1rem;
+	/* Tamanho da fonte */
+	line-height: 25px;
+	/* Título em maiúsculo */
+	margin-top: 20px;
+	/* Espaçamento do topo */
+}
+
+.dados_lista li h3:after {
+	/* Criação da linha em baixo do título */
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 2px auto;
+}
+
+.dados_lista li p {
+	padding: 10px 20px 20px 20px;
+	/* Espaçamento interno dos parágrafos */
+}
+
+.dados_icone {
+	background: #000;
+	/* Cor de fundo da imagem das caixas */
+	padding: 20px;
+	/* Espaçamento interno dela em relação as caixas */
+}
+
+.titulo-dados {
+	color: white;
+	font-size: 1rem;
+}
+
+.subtitulo {
+	font-size: 30px;
+	/* Tamanho da fonte do subtitulo */
+	line-height: 30px;
+	/* Espaçamento entre as linhas do subtitulo */
+	font-weight: bold;
+	/* Peso da fonte em negrito */
+	color:rgb(174, 162, 106);
+	/* Cor */
+	text-transform: uppercase;
+	/* Transformando tudo em maiúsculo */
+	text-align: center;
+	/* Alinhando o subtítulo ao centro */
+	margin: 40px auto 40px auto;
+	/* Espaçamento entre o Subtítulo e o conteúdo abaixo dele */
+}
+
+.subtitulo:after {
+	/* Código para criar a linha abaixo do subítulo */
+	content: "";
+	display: block;
+	/* Display block faz com que o elemento inicie na próxima linha */
+	width: 200px;
+	/* Largura da linha */
+	height: 3px;
+	/* Altura da linha */
+	background: white;
+	/*Cor da linha */
+	margin: 8px auto;
+	/* Espaçamento de 8 px cima e baixo e utilizada propriedade auto para que os espaçamentos da esquerda e direita sejam feitos de forma automática para que a linha fique no centro da tela */
+}
+
+.container-flex {
+	display: flex;
+	gap: 40px;
+    padding-left: 10px;
+    color: white;
+}
+
+.paragrafo-imagem {
+	max-width: 500px;
+    
+}
+
+.container-imagem {
+	min-width: 400px;
+    
+    
+}
+
+.texto-abaixo-imagem {
+	margin: 40px auto;
+    color: white;
+    
+}
+
+.texto-vazamento {
+	margin-top: 40px;
+    color: white;
+    
+}
+
+.container-conteudo {
+    display: block;
+    margin-top: 20px;
+    
+}
+.footer {
+    position: flex;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 300;
+    background-color: rgb(174, 162, 106);
+}

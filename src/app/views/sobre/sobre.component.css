@@ -1,0 +1,204 @@
+html {
+	scroll-behavior: smooth;
+    
+	/* Deixar o scroll ser realizado de uma maneira suave quando clicado em algum link do menu */
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	/* Definição da fonte a ser utilizada no projeto */
+}
+
+p {
+	font-family: Georgia, "Times New Roman", serif;
+	/* Definição da fonte a ser utilizada nos parágrafos */
+	font-size: 1.4rem;
+	/*Tamanho da fonte */
+	line-height: 26px;
+	/* Espaçamento entre as linhas */
+}
+
+img {
+	display: block;
+	/* Deixa a imagem num formato de bloco que significa que ela vai ocupar toda a largura dela mesma */
+	max-width: 100%;
+	/* Largura máxima da imagem definida para ser 100% do tamanho dela */
+}
+
+
+.titulo-contato {
+	font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+}
+
+.titulo-contato:after {
+	width: 0;
+}
+
+.contatos {
+	width: 100%;
+	/* Container ocupando 100% da tela */
+	height: 220px;
+	/* Altura do container */
+	background: url("/assets/img/facens.png") no-repeat center;
+	/* Colocando essa imagem no container, dizendo pra ela não se repetir dentro dele e ficando centralizada */
+	background-size: cover;
+	/* Falando pra ela cobrir 100% dele */
+	text-align: center;
+	/* Alinhando o texto dentro dela para ficar centralizado na tela */
+	padding-top: 40px;
+	/* Espaçamento interno */
+}
+
+.contatos .contatos-fotos {
+	max-width: 400px;
+	/* Definindo um tamanho máximo que a citação pode ocupar */
+}
+
+/* INÍCIO PARTE CHARLES */
+
+.imagem-perfil {
+	margin: 5pt;
+	width: 80pt;
+	border-radius: 50%;
+	border: 2px solid;
+	border-color:  #005b8f;;
+}
+
+.nome {
+	color: #222;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 2;
+}
+
+.sobreGeral {
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 0;
+	background: url("/assets/img/facens.png") no-repeat center;
+	background-size: cover;
+}
+
+.sobre01 {
+	background-color: rgb(174, 162, 106);;
+	border-radius: 80px;
+	display: flex;
+	flex-direction: row;
+	color: white;
+}
+
+#imagem{
+	display: flex;
+	align-items: center;
+}
+
+#conteúdo01 {
+	margin: 2px;
+	padding: 2px;
+	border: 2px;
+}
+
+.sobre02 {
+	background-color: rgb(174, 162, 106);;
+	border-radius: 80px;
+	padding: 0;
+	margin: 10pt;
+	text-align: right;
+	display: flex;
+	flex-direction: row-reverse;
+	color: white;
+}
+
+.socialMedia {
+	display: flex;
+}
+
+.socialMedia a {
+	margin-right: 20px;
+}
+
+#assinatura {
+	width: 100%;
+	background-color: #222;
+	color: #888;
+}
+
+/*Footer*/
+
+.copy {
+	width: 100%;
+	/* Tamanho do container com 100% de largura da tela */
+	background: black;
+	/* Cor */
+	padding: 20px 0;
+	/* Espaçamento interno */
+}
+
+.paragrafo-copy {
+	color: white;
+}
+
+.subtitulo {
+	font-size: 48px;
+	/* Tamanho da fonte do subtitulo */
+	line-height: 50px;
+	/* Espaçamento entre as linhas do subtitulo */
+	font-weight: bold;
+	/* Peso da fonte em negrito */
+	color: white;
+	/* Cor */
+	text-transform: uppercase;
+	/* Transformando tudo em maiúsculo */
+	text-align: center;
+	/* Alinhando o subtítulo ao centro */
+	margin: 40px auto 40px auto;
+	/* Espaçamento entre o Subtítulo e o conteúdo abaixo dele */
+}
+
+.subtitulo:after {
+	/* Código para criar a linha abaixo do subítulo */
+	content: "";
+	display: block;
+	/* Display block faz com que o elemento inicie na próxima linha */
+	width: 200px;
+	/* Largura da linha */
+	height: 3px;
+	/* Altura da linha */
+	background: #000;
+	/*Cor da linha */
+	margin: 8px auto;
+	/* Espaçamento de 8 px cima e baixo e utilizada propriedade auto para que os espaçamentos da esquerda e direita sejam feitos de forma automática para que a linha fique no centro da tela */
+}
+
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.grid-16 {
+    width: 940px;
+}
+
+.footer {
+    position: flex;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 300;
+    background-color: rgb(174, 162, 106);
+}
