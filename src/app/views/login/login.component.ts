@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { FirebaseService } from 'src/app/sharedprincipal/firebase.service';
 
 @Component({
   selector: 'app-login',
@@ -6,10 +9,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  form!: FormGroup
+  redirectURL: any = undefined
+  
+  constructor(
+    private firebaseService: FirebaseService,
+    private formBuilder: FormBuilder,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,    
+  ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe( params => {
+      if ( params.has('redirectURL') ) {
+        this.redirectURL = params.get('redirectURL');
+      }
+    })
+
+    this.form = this.formBuilder.group({
+      email: [''],
+      password: ['']
+    });
+  }
+
+  acessar() {
+    this.firebaseService.login(this.form.get('email')?.value, this.form.get('password')?.value).then((result) => {
+      if ( this.redirectURL ) {
+        this.router.navigateByUrl(this.redirectURL)
+      }
+    })
   }
 
 }

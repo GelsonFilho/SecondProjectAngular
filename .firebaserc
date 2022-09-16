@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cybersecfirebase": {
+      "hosting": {
+        "Frontend": [
+          "cybersecfirebase"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cybersecfirebase"
+  }
+}

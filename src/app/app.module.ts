@@ -34,9 +34,15 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
 import { ReactiveFormsModule } from '@angular/forms';
 import { SobreComponent } from './views/sobre/sobre.component';
 import { MateriaComponent } from './views/materia/materia.component';
-import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
+// import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
 import { CadastroEmpresaComponent } from './views/cadastro-empresa/cadastro-empresa.component';
 import { LoginComponent } from './views/login/login.component';
+import { getApp, initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth, initializeAuth, inMemoryPersistence } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { CommonModule } from '@angular/common';
+
 
 
 registerLocaleData(localePt);
@@ -59,12 +65,13 @@ registerLocaleData(localePt);
     ContatosComponent,
     SobreComponent,
     MateriaComponent,
-    CadastroUsuarioComponent,
+    // CadastroUsuarioComponent,
     CadastroEmpresaComponent,
     LoginComponent,
 
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -81,7 +88,16 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => {
+      const auth = initializeAuth(getApp(), {
+        persistence: inMemoryPersistence
+      });
+      
+      return auth;
+    }),
+    provideFirestore(() => getFirestore())
   ],
   providers: [{
     provide: LOCALE_ID,

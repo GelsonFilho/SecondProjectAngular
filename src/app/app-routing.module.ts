@@ -11,6 +11,8 @@ import { ProductCrudComponent } from "./views/product-crud/product-crud.componen
 import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
 import { LoginComponent } from './views/login/login.component';
 import { CadastroEmpresaComponent } from './views/cadastro-empresa/cadastro-empresa.component';
+import { AdminGuard } from './views/admin/admin.guard';
+
 
 const routes: Routes = [
   {
@@ -27,7 +29,8 @@ const routes: Routes = [
   },
   {
     path: "cadastrousuario",
-    component: CadastroUsuarioComponent
+    component: CadastroUsuarioComponent,
+    loadChildren: () => import('./views/cadastro-usuario/cadastro-usuario.module').then( m => m.CadastroUsuarioModule )
   },
   {
     path: "cadastroempresa",
@@ -36,6 +39,15 @@ const routes: Routes = [
   {
     path: "login",
     component: LoginComponent
+  },
+  {
+    path: 'login/:redirectURL',
+    component: LoginComponent
+  },
+  {
+    path: "admin",
+    loadChildren: () => import('./views/admin/admin.module').then( m => m.AdminModule ),
+    canLoad: [AdminGuard]
   },
   {
     path: "sobre",
