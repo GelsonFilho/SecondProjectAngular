@@ -23,7 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
-import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
+// import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -35,7 +35,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SobreComponent } from './views/sobre/sobre.component';
 import { MateriaComponent } from './views/materia/materia.component';
 // import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
-import { CadastroEmpresaComponent } from './views/cadastro-empresa/cadastro-empresa.component';
+// import { CadastroEmpresaComponent } from './views/cadastro-empresa/cadastro-empresa.component';
 import { LoginComponent } from './views/login/login.component';
 import { getApp, initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -59,14 +59,14 @@ registerLocaleData(localePt);
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductRead2Component,
+    // ProductRead2Component,
     ProductUpdateComponent,
     ProductDeleteComponent,
     ContatosComponent,
     SobreComponent,
     MateriaComponent,
     // CadastroUsuarioComponent,
-    CadastroEmpresaComponent,
+    // CadastroEmpresaComponent,
     LoginComponent,
 
   ],

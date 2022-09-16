@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from 'src/app/sharedprincipal/firebase.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HeaderService } from 'src/app/components/template/header/header.service';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -12,8 +13,13 @@ export class CadastroUsuarioComponent implements OnInit {
 
   constructor(
     private firebaseService: FirebaseService,
-    private formBuilder: FormBuilder
-  ) { }
+    private formBuilder: FormBuilder,
+    private HeaderService: HeaderService
+  ) {  HeaderService.headerData = {
+    title:'Cadastro de usuários',
+    icon:'person_add',
+    routeUrl:'cadastrousuario'
+  }}
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -27,6 +33,7 @@ export class CadastroUsuarioComponent implements OnInit {
       pretsalarial: [''],
       escolaridade: [''],
       experiencia: [''],
+      ehempresa: ['false'],
     });
   }
 

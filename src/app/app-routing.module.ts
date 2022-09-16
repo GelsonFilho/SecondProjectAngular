@@ -8,8 +8,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
-import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
 import { LoginComponent } from './views/login/login.component';
+import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
 import { CadastroEmpresaComponent } from './views/cadastro-empresa/cadastro-empresa.component';
 import { AdminGuard } from './views/admin/admin.guard';
 
@@ -34,12 +34,13 @@ const routes: Routes = [
   },
   {
     path: "cadastroempresa",
-    component: CadastroEmpresaComponent
+    component: CadastroEmpresaComponent,
+    loadChildren: () => import('./views/cadastro-empresa/cadastro-empresa.module').then( m => m.CadastroEmpresaModule )
   },
-  {
-    path: "login",
-    component: LoginComponent
-  },
+  // {
+  //   path: "login",
+  //   component: LoginComponent
+  // },
   {
     path: 'login/:redirectURL',
     component: LoginComponent

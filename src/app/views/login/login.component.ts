@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FirebaseService } from 'src/app/sharedprincipal/firebase.service';
+import { HeaderService } from 'src/app/components/template/header/header.service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,14 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private activatedRoute: ActivatedRoute,
     private router: Router,    
-  ) { }
+    private HeaderService: HeaderService
+  ) {
+    HeaderService.headerData = {
+      title: 'Login',
+      icon: 'login',
+      routeUrl: 'login'
+    }
+  }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe( params => {

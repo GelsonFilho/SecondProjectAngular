@@ -43,6 +43,7 @@
         <mat-hint align="end"> {{mensagem.value?.length || 0}}/256</mat-hint>
         <mat-error *ngIf="mensagem.invalid">Por favor, digite uma mensagem</mat-error>
     </mat-form-field>
+    <br>
     <button [disabled]="isLoading" class="submit" type="submit">Enviar</button>
     <input [formControl]="honeypot" class="hidden" type="text" />
     <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">

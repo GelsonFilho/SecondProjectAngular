@@ -1,41 +1,42 @@
 <div class="flex flex-column flex-grow-1 flex align-items-center justify-content-center bg-gray-200">
     <div class="fadein animation-duration-500 p-4 w-100 xl:w-3">
         <div class="text-center mb-5">
-            <div class="font-bold text-900 text-3xl font-medium mb-3">Cadastro de Usuário</div>
+            <div class="cadastro">Cadastro de Usuários</div>
         </div>
-    
-        <form [formGroup]="form">
+
+        <form [formGroup]="form" class="conteudo">
             <label for="nome" class="block text-900 font-medium mb-2">Nome</label>
-            <input class="w-full" pInputText formControlName="nome" autocomplete="off" >
-            
+            <input class="w-full" pInputText formControlName="nome" autocomplete="off">
+
             <label for="email" class="block text-900 font-medium mb-2">E-mail</label>
             <input class="w-full" id="email" formControlName="email" type="text" pInputText autocomplete="off">
-            
+
             <label for="password" class="block text-900 font-medium mb-2">Senha</label>
             <input class="w-full mb-3" formControlName="senha" type="password" pPassword />
 
             <label for="endereco" class="block text-900 font-medium mb-2">Endereço</label>
-            <input class="w-full" pInputText formControlName="endereco" autocomplete="off" >
-            
+            <input class="w-full" pInputText formControlName="endereco" autocomplete="off">
             <label for="telefone" class="block text-900 font-medium mb-2">Telefone</label>
-            <input class="w-full" pInputText formControlName="telefone" autocomplete="off" >
-            
+            <input class="w-full" pInputText formControlName="telefone" autocomplete="off">
+
             <label for="whatsapp" class="block text-900 font-medium mb-2">Whatsapp</label>
-            <input class="w-full" pInputText formControlName="whatsapp" autocomplete="off" >
-            
+            <input class="w-full" pInputText formControlName="whatsapp" autocomplete="off">
+
             <label for="linkedin" class="block text-900 font-medium mb-2">Linkedin</label>
-            <input class="w-full" pInputText formControlName="linkedin" autocomplete="off" >
-            
+            <input class="w-full" pInputText formControlName="linkedin" autocomplete="off">
+
             <label for="pretsalarial" class="block text-900 font-medium mb-2">Pretensão Salarial</label>
-            <input class="w-full" pInputText formControlName="pretsalarial" autocomplete="off" >
-            
+            <input class="w-full" pInputText formControlName="pretsalarial" autocomplete="off">
+
             <label for="escolaridade" class="block text-900 font-medium mb-2">Escolaridade</label>
-            <input class="w-full" pInputText formControlName="escolaridade" autocomplete="off" >
-            
+            <input class="w-full" pInputText formControlName="escolaridade" autocomplete="off">
+
             <label for="experiência" class="block text-900 font-medium mb-2">Experiência</label>
-            <input class="w-full" pInputText formControlName="experiência" autocomplete="off" >
-            
-            <button (click)="onSalvarUsuario()" pButton pRipple label="Cadastrar" icon="pi pi-user" class="w-full font-bold" [disabled]="!form.valid"></button>
+            <input class="w-full" pInputText formControlName="experiência" autocomplete="off">
+
+            <br>
+            <button (click)="onSalvarUsuario()" pButton pRipple label="Cadastrar" icon="pi pi-user" class="button"
+                [disabled]="!form.valid">Cadastrar</button>
         </form>
     </div>
 </div>

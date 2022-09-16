@@ -24,6 +24,11 @@
       "name": "certificação",
       "price": "1000.00000",
       "id": 6
+    },
+    {
+      "name": "teste certificação",
+      "price": "58562",
+      "id": 7
     }
   ]
 }

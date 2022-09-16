@@ -24,7 +24,7 @@ export class FirebaseService {
   }
 
   login(email: string, senha: string) {
-    return signInWithEmailAndPassword(this.auth, email, senha)
+    return signInWithEmailAndPassword(this.auth, email, senha);
   }
 
   listarUsuarios(){
