@@ -6,13 +6,16 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "./views/home/home.component";
-import {ProductCrudComponent} from "./views/product-crud/product-crud.component";
+import { HomeComponent } from "./views/home/home.component";
+import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
+import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
+import { LoginComponent } from './views/login/login.component';
+import { CadastroEmpresaComponent } from './views/cadastro-empresa/cadastro-empresa.component';
 
 const routes: Routes = [
   {
-  path: "",
-  component: HomeComponent
+    path: "",
+    component: HomeComponent
   },
   {
     path: "materia",
@@ -23,23 +26,35 @@ const routes: Routes = [
     component: ContatosComponent
   },
   {
+    path: "cadastrousuario",
+    component: CadastroUsuarioComponent
+  },
+  {
+    path: "cadastroempresa",
+    component: CadastroEmpresaComponent
+  },
+  {
+    path: "login",
+    component: LoginComponent
+  },
+  {
     path: "sobre",
     component: SobreComponent
   },
   {
-  path:"products",
-  component: ProductCrudComponent
+    path: "products",
+    component: ProductCrudComponent
   },
   {
-    path:"products/create",
+    path: "products/create",
     component: ProductCreateComponent
   },
   {
-    path:"products/update/:id",
+    path: "products/update/:id",
     component: ProductUpdateComponent
   },
   {
-    path:"products/delete/:id",
+    path: "products/delete/:id",
     component: ProductDeleteComponent
   },
 ];

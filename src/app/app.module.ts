@@ -34,6 +34,9 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
 import { ReactiveFormsModule } from '@angular/forms';
 import { SobreComponent } from './views/sobre/sobre.component';
 import { MateriaComponent } from './views/materia/materia.component';
+import { CadastroUsuarioComponent } from './views/cadastro-usuario/cadastro-usuario.component';
+import { CadastroEmpresaComponent } from './views/cadastro-empresa/cadastro-empresa.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 registerLocaleData(localePt);
@@ -56,6 +59,9 @@ registerLocaleData(localePt);
     ContatosComponent,
     SobreComponent,
     MateriaComponent,
+    CadastroUsuarioComponent,
+    CadastroEmpresaComponent,
+    LoginComponent,
 
   ],
   imports: [
