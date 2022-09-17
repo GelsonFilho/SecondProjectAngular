@@ -28,8 +28,43 @@
     border: 1px solid black;
     padding: 4px 16px;
     transition: 0.4s;
-    width: 34.4%;
+    width: 54.5%;
     margin-top: 10px;
     font-family: 'Oswald', sans-serif;
-    margin-left: 32.8%;
+    margin-left: 22.75%;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+
+.caixa {
+    border-radius: 7px;
+}
+
+
+button:disabled {
+    background-color: rgba(174, 161, 106, 0.253);
+    color: rgba(0, 0, 0, 0.150);
+    border: 1px solid rgba(0, 0, 0, 0.150);
+}
+
+.button span {
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 5;
+    right: 0;
 }

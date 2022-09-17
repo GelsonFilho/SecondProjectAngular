@@ -3,10 +3,33 @@
         <th>Nome</th>
         <th>E-Mail</th>
         <th>Endereco</th>
+        <th>Escolaridade</th>
+        <th>Experiencia</th>
+        <th>Linkedin</th>
+        <th>Pretensão salarial</th>
+        <th>Senha</th>
+        <th>Telefone</th>
+        <th>Whatsapp</th>
+        <th>CNPJ</th>
+        <th>Porte</th>
+        <th>Razão Social</th>
+        <th>Flag Empresa</th>
     </tr>
     <tr *ngFor="let usuario of usuarios$ | async">
         <td>{{usuario.nome}}</td>
         <td>{{usuario.email}}</td>
         <td>{{usuario.endereco}}</td>
+        <td>{{usuario.escolaridade}}</td>
+        <td>{{usuario.experiencia}}</td>
+        <td>{{usuario.linkedin}}</td>
+        <td>{{usuario.pretsalarial}}</td>
+        <td>{{usuario.senha}}</td>
+        <td>{{usuario.telefone}}</td>
+        <td>{{usuario.whatsapp}}</td>
+        <td>{{usuario.cnpj}}</td>
+        <td>{{usuario.porte}}</td>
+        <td>{{usuario.razaosocial}}</td>
+        <td>{{usuario.ehempresa}}</td>
+
     </tr> 
 </table>

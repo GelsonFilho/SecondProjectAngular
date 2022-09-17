@@ -10,6 +10,7 @@
     color: #005b8f;
     font-family: 'Oswald', sans-serif;
 }
+
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -21,14 +22,47 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.caixa {
+    border-radius: 7px;
+}
+
 .button {
     margin-top: 10px;
     background-color: rgb(174, 162, 106);
     color: black;
     border: 1px solid black;
     padding: 4px 16px;
-    transition: 0.4s;
+    transition: 1s;
     width: 100%;
     margin-top: 10px;
     font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+button:disabled {
+    background-color: rgba(174, 161, 106, 0.253);
+    color: rgba(0, 0, 0, 0.150);
+    border: 1px solid rgba(0, 0, 0, 0.150);
+}
+
+.button span {
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 5;
+    right: 0;
 }

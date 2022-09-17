@@ -7,13 +7,14 @@
         <div>
             <form [formGroup]="form" class="conteudo">
                 <label for="usuario" class="block text-900 font-medium mb-2">Email</label>
-                <input formControlName="email" type="text" pInputText class="w-full mb-3">
+                <input formControlName="email" type="text" pInputText class="caixa">
                 <label for="senha" class="block text-900 font-medium mb-2">Senha</label>
-                <input formControlName="password" type="password" pInputText class="w-full mb-3">
+                <input formControlName="password" type="password" pInputText class="caixa">
             </form>
-            
+
             <br>
-            <button (click)="acessar()" pButton pRipple label="Acessar" icon="pi pi-user" class="button">Acessar</button>
+            <button (click)="acessar()" pButton pRipple label="Acessar" icon="pi pi-user"
+                class="button" [disabled]="!form.valid"><span>Acessar</span></button>
         </div>
     </div>
 </div>

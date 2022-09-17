@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FirebaseService } from 'src/app/sharedprincipal/firebase.service';
 import { HeaderService } from 'src/app/components/template/header/header.service';
@@ -35,8 +35,8 @@ export class LoginComponent implements OnInit {
     })
 
     this.form = this.formBuilder.group({
-      email: [''],
-      password: ['']
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 

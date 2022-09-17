@@ -6,37 +6,38 @@
 
         <form [formGroup]="form" class="conteudo">
             <label for="nome" class="block text-900 font-medium mb-2">Nome</label>
-            <input class="w-full" pInputText formControlName="nome" autocomplete="off">
+            <input class="caixa" pInputText formControlName="nome" autocomplete="off">
 
             <label for="email" class="block text-900 font-medium mb-2">E-mail</label>
-            <input class="w-full" id="email" formControlName="email" type="text" pInputText autocomplete="off">
+            <input class="caixa" id="email" formControlName="email" type="text" pInputText autocomplete="off">
 
             <label for="password" class="block text-900 font-medium mb-2">Senha</label>
-            <input class="w-full mb-3" formControlName="senha" type="password" pPassword />
+            <input class="caixa mb-3" formControlName="senha" type="password" pPassword />
 
             <label for="endereco" class="block text-900 font-medium mb-2">Endereço</label>
-            <input class="w-full" pInputText formControlName="endereco" autocomplete="off">
+            <input class="caixa" pInputText formControlName="endereco" autocomplete="off">
+           
             <label for="telefone" class="block text-900 font-medium mb-2">Telefone</label>
-            <input class="w-full" pInputText formControlName="telefone" autocomplete="off">
+            <input class="caixa" pInputText formControlName="telefone" autocomplete="off">
 
             <label for="whatsapp" class="block text-900 font-medium mb-2">Whatsapp</label>
-            <input class="w-full" pInputText formControlName="whatsapp" autocomplete="off">
+            <input class="caixa" pInputText formControlName="whatsapp" autocomplete="off">
 
             <label for="linkedin" class="block text-900 font-medium mb-2">Linkedin</label>
-            <input class="w-full" pInputText formControlName="linkedin" autocomplete="off">
+            <input class="caixa" pInputText formControlName="linkedin" autocomplete="off">
 
             <label for="pretsalarial" class="block text-900 font-medium mb-2">Pretensão Salarial</label>
-            <input class="w-full" pInputText formControlName="pretsalarial" autocomplete="off">
+            <input class="caixa" pInputText formControlName="pretsalarial" autocomplete="off">
 
             <label for="escolaridade" class="block text-900 font-medium mb-2">Escolaridade</label>
-            <input class="w-full" pInputText formControlName="escolaridade" autocomplete="off">
+            <input class="caixa" pInputText formControlName="escolaridade" autocomplete="off">
 
             <label for="experiência" class="block text-900 font-medium mb-2">Experiência</label>
-            <input class="w-full" pInputText formControlName="experiência" autocomplete="off">
+            <input class="caixa" pInputText formControlName="experiência" autocomplete="off">
 
             <br>
-            <button (click)="onSalvarUsuario()" pButton pRipple label="Cadastrar" icon="pi pi-user" class="button"
-                [disabled]="!form.valid">Cadastrar</button>
+            <button (click)="onSalvarUsuario()" pButton pRipple label="Cadastrar" class="button" icon="pi pi-user"
+                [disabled]="!form.valid"><span>Cadastrar</span></button>
         </form>
     </div>
 </div>
